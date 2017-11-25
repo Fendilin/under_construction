@@ -1,0 +1,185 @@
+/*** Gear Animation ***/
+@-webkit-keyframes rotate-gear {
+  0%   { -webkit-ransform: translateY(-50%) rotate(0deg); }
+  100% { -webkit-ransform: translateY(-50%) rotate(0deg); }
+}
+@-moz-keyframes rotate-gear {
+  0%   { -moz-transform: translateY(-50%) rotate(0deg); }
+  100% { -moz-transform: translateY(-50%) rotate(0deg); }
+}
+@-o-keyframes rotate-gear {
+  0%   { -o-transform: translateY(-50%) rotate(0deg); }
+  100% { -o-transform: translateY(-50%) rotate(0deg); }
+}
+@keyframes rotate-gear {
+  0%   { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg);}
+}
+
+/*** Panneau1 Animation ***/
+@-webkit-keyframes pan1 {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  50%  { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes pan1 {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  50%  { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-o-keyframes pan1 {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  50%  { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes pan1 {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  50%  { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/*** Panneau2 Animation ***/
+@-webkit-keyframes pan2 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes pan2 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-o-keyframes pan2 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes pan2 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/*** Panneau3 Animation ***/
+@-webkit-keyframes pan3 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes pan3 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes pan3 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes pan3 {
+  0%   { opacity: 0; }
+  25%  { opacity: 0; }
+  50%  { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+*
+{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#header, #footer
+{
+  height: 10vh;
+  width: 100vw;
+  background: url('img/band.png') repeat-x center;
+}
+
+#content
+{
+  height: 80vh;
+  width: 100vw;
+}
+
+#anim-wrap
+{
+  height: 60vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+#anim-wrap img
+{
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+#gear
+{
+  z-index: 0;
+  -webkit-animation: rotate-gear 25s linear infinite;
+  -moz-animation:    rotate-gear 25s linear infinite;
+  -o-animation:      rotate-gear 25s linear infinite;
+  animation:         rotate-gear 25s linear infinite;
+}
+
+.panneau
+{
+  transform: translateY(-60%)!important;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  -o-transition: opacity;
+  transition: opacity;
+  z-index: 10;
+}
+
+#pan1
+{
+  -webkit-animation: pan1 5s linear infinite;
+  -moz-animation:    pan1 5s linear infinite;
+  -o-animation:      pan1 5s linear infinite;
+  animation:         pan1 5s linear infinite;
+}
+
+#pan2
+{
+  -webkit-animation: pan2 5s linear infinite;
+  -moz-animation:    pan2 5s linear infinite;
+  -o-animation:      pan2 5s linear infinite;
+  animation:         pan2 5s linear infinite;
+}
+
+#pan3
+{
+  -webkit-animation: pan3 5s linear infinite;
+  -moz-animation:    pan3 5s linear infinite;
+  -o-animation:      pan3 5s linear infinite;
+  animation:         pan3 5s linear infinite;
+}
