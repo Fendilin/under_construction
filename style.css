@@ -144,15 +144,15 @@
 #gear
 {
   z-index: 0;
-  -webkit-animation: rotate-gear 25s linear infinite;
-  -moz-animation:    rotate-gear 25s linear infinite;
-  -o-animation:      rotate-gear 25s linear infinite;
-  animation:         rotate-gear 25s linear infinite;
+  -webkit-animation: rotate-gear 50s linear infinite;
+  -moz-animation:    rotate-gear 50s linear infinite;
+  -o-animation:      rotate-gear 50s linear infinite;
+  animation:         rotate-gear 50s linear infinite;
 }
 
 .panneau
 {
-  transform: translateY(-60%)!important;
+  transform: translateY(-64.5%)!important;
   -webkit-transition: opacity;
   -moz-transition: opacity;
   -o-transition: opacity;
