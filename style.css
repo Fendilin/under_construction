@@ -1,19 +1,19 @@
 /*** Gear Animation ***/
 @-webkit-keyframes rotate-gear {
-  0%   { -webkit-ransform: translateY(-50%) rotate(0deg); }
-  100% { -webkit-ransform: translateY(-50%) rotate(0deg); }
+  0%   { -webkit-ransform: translateY(-42%) rotate(0deg); }
+  100% { -webkit-ransform: translateY(-42%) rotate(0deg); }
 }
 @-moz-keyframes rotate-gear {
-  0%   { -moz-transform: translateY(-50%) rotate(0deg); }
-  100% { -moz-transform: translateY(-50%) rotate(0deg); }
+  0%   { -moz-transform: translateY(-42%) rotate(0deg); }
+  100% { -moz-transform: translateY(-42%) rotate(0deg); }
 }
 @-o-keyframes rotate-gear {
-  0%   { -o-transform: translateY(-50%) rotate(0deg); }
-  100% { -o-transform: translateY(-50%) rotate(0deg); }
+  0%   { -o-transform: translateY(-42%) rotate(0deg); }
+  100% { -o-transform: translateY(-42%) rotate(0deg); }
 }
 @keyframes rotate-gear {
-  0%   { transform: translateY(-50%) rotate(0deg); }
-  100% { transform: translateY(-50%) rotate(360deg);}
+  0%   { transform: translateY(-42%) rotate(0deg); }
+  100% { transform: translateY(-42%) rotate(360deg);}
 }
 
 /*** Panneau1 Animation ***/
@@ -152,7 +152,7 @@
 
 .panneau
 {
-  transform: translateY(-64.5%)!important;
+  transform: translateY(-54.5%)!important;
   -webkit-transition: opacity;
   -moz-transition: opacity;
   -o-transition: opacity;
